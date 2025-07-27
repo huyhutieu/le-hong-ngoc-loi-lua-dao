@@ -49,17 +49,17 @@ export default function ScamWarningPage() {
           </div>
         </div>
       </header>
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-3 sm:px-4 lg:px-6 py-6 sm:py-8 max-w-7xl">
         {/* Main Warning Alert */}
-        <Alert className="mb-8 border-red-500 bg-red-50 border-2">
-          <AlertTriangle className="h-6 w-6 text-red-600" />
-          <AlertDescription className="text-lg font-semibold text-red-800">
-            <span className="block text-xl mb-2">⚠️ NGUY HIỂM - TRÁNH XA ⚠️</span>
+        <Alert className="mb-6 sm:mb-8 border-red-500 bg-red-50 border-2 mx-auto max-w-4xl">
+          <AlertTriangle className="h-5 w-5 sm:h-6 sm:w-6 text-red-600" />
+          <AlertDescription className="text-base sm:text-lg font-semibold text-red-800">
+            <span className="block text-lg sm:text-xl mb-2">⚠️ NGUY HIỂM - TRÁNH XA ⚠️</span>
             Đây là thông tin về kẻ lừa đảo đã được xác minh. Hãy chia sẻ để bảo vệ cộng đồng!
           </AlertDescription>
         </Alert>
 
-        <div className="grid lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           {/* Scammer Information Card - Replaced by ScammerInfoCard component */}
           <ScammerInfoCard />
 
